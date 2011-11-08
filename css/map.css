@@ -27,19 +27,7 @@ header h2 a, .logo a {
 }
 header h3, header h2 { margin: 0; }
 
-header h3 a, header h3 a:hover, header h3 a:visited { 
-    display: block; 
-    float: left;  
-    font: 400 32px/50px proxima-nova,sans-serif; 
-    color: #fff; 
-    text-decoration: none; 
-    padding: 0 15px 0 0; 
-    margin: 0 0 0 10px; 
-    border-right: 1px solid #444; 
-    -webkit-box-shadow: 1px 0 0 #000;
-       -moz-box-shadow: 1px 0 0 #000;
-            box-shadow: 1px 0 0 #000;
-}
+header h3 a, header h3 a:hover { display: block; float: left;  font: 400 32px/50px proxima-nova,sans-serif; color: #fff; text-decoration: none; padding: 0 15px 0 0; margin: 0 0 0 10px; border-right: 1px solid #444; }
 header h1 { display: block; float: left; line-height: 50px; color: #fff; font-weight: 700; font-size: 32px; margin: 0 0 0 15px;  }
 
 #map { 
@@ -75,7 +63,6 @@ header h1 { display: block; float: left; line-height: 50px; color: #fff; font-we
 
 
 .wax-tooltip {
-    min-width: 200px;
     display: none;
     z-index:650;
     position:absolute;
@@ -96,7 +83,9 @@ header h1 { display: block; float: left; line-height: 50px; color: #fff; font-we
 .wax-tooltip .num { text-align: right; clear: both; padding: 0 5px; }
 
 .wax-tooltip td { border-top: 1px solid #ddd; padding: 0 2px; }
-.wax-tooltip h4 { font-size: 1.3em; font-weight: 700; padding: 0 0 5px; margin: 0; }
+.wax-tooltip h4 { font-size: 1.3em; line-height: 1; font-weight: 700; padding: 0 0 5px; margin: 0; }
+    .wax-tooltip .county { margin: 0; padding: 0; }
+    .wax-tooltip .state { margin: 0 0 10px; }
 
 a.wax-fullscreen { display: none; }
 a.zoomer { 

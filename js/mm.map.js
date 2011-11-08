@@ -2,12 +2,17 @@ var mm = com.modestmaps;
 
 var map = window.map || {};
 var CENTER = new mm.Location(40.302, -82.696);
-var DEFAULT_MAP = 'john-kasich';
+var DEFAULT_MAP = 'election';
 
 var baseurl = "http://api.tiles.mapbox.com/v2/";
 var base_layers = ['npr.USA-blank-trans-z11',
         'npr.world-blank-bright-0-10'];
 var layers = {
+	'election': {
+		slug: "npr.ohio-election-2010---kasich-vs-strickland",
+		title: "2010 Election"
+    },
+
     'john-kasich': {
         slug: "npr.ohio-election-map---john-kasich",
         title: "John Kasich"
