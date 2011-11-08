@@ -1,6 +1,7 @@
 var mm = com.modestmaps;
 
 var map = window.map || {};
+var CENTER = new mm.Location(40.302, -82.696);
 var DEFAULT_MAP = 'john-kasich';
 
 var baseurl = "http://api.tiles.mapbox.com/v2/";
@@ -42,22 +43,20 @@ function buildMapList() {
     return list;
 }
 
-var FLORIDA = new mm.Location(40.302, -82.696);
-
 function refreshMap(slug) {    
     var tiles = getTiles(slug);
     var url = baseurl + tiles + '.jsonp';
 
     wax.tilejson(url, function(tilejson) {
         window.tilejson = tilejson;
-        tilejson.minzoom = 7;
-        tilejson.maxzoom = 10;
+        tilejson.minzoom = 5;
+        tilejson.maxzoom = 9;
         
         if (map.setProvider) {
             map.setProvider(new wax.mm.connector(tilejson));
         } else {
             map = new mm.Map('map', new wax.mm.connector(tilejson));
-            map.setCenterZoom(FLORIDA, 6);
+            map.setCenterZoom(CENTER, 6);
             wax.mm.zoomer(map).appendTo(map.parent);
             wax.mm.hash(map);
         }
