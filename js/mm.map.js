@@ -56,7 +56,7 @@ function refreshMap(slug) {
             map.setProvider(new wax.mm.connector(tilejson));
         } else {
             map = new mm.Map('map', new wax.mm.connector(tilejson));
-            map.setCenterZoom(CENTER, 6);
+            map.setCenterZoom(CENTER, 7);
             wax.mm.zoomer(map).appendTo(map.parent);
             wax.mm.hash(map);
         }
