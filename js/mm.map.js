@@ -10,17 +10,17 @@ var base_layers = ['npr.USA-blank-trans-z11',
 var layers = {
 	'election': {
 		slug: "npr.ohio-election-2010---kasich-vs-strickland",
-		title: "2010 Election"
+		title: "2010: Both Candidates"
     },
 
     'john-kasich': {
         slug: "npr.ohio-election-map---john-kasich",
-        title: "John Kasich"
+        title: "2010: For John Kasich"
     },
     
 	'ted-strickland': {
 		slug: "npr.ohio-election-2010---ted-strickland",
-		title: "Ted Strickland"
+		title: "2010: For Ted Strickland"
     }
 };
 var top_layer = ['mapbox.world-borders-dark'];
