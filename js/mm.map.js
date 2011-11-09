@@ -2,12 +2,17 @@ var mm = com.modestmaps;
 
 var map = window.map || {};
 var CENTER = new mm.Location(40.302, -82.696);
-var DEFAULT_MAP = 'election';
+var DEFAULT_MAP = 'issue2';
 
 var baseurl = "http://api.tiles.mapbox.com/v2/";
 var base_layers = ['npr.USA-blank-trans-z11',
         'npr.world-blank-bright-0-10'];
 var layers = {
+	'issue2': {
+		slug: "npr.ohio-issue-2-election-results-map",
+		title: "2011: Issue 2"
+    },
+
 	'election': {
 		slug: "npr.ohio-election-2010---kasich-vs-strickland",
 		title: "2010: Both Candidates"
