@@ -9,7 +9,7 @@ var base_layers = ['npr.USA-blank-trans-z11',
         'npr.world-blank-bright-0-10'];
 var layers = {
 	'issue2': {
-		slug: "npr.ohio-issue-2-election-results-map",
+		slug: "npr.issue-2",
 		title: "2011: Issue 2"
     },
 
