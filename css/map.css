@@ -72,6 +72,7 @@ header h1 { display: block; float: left; line-height: 50px; color: #fff; font-we
 .wax-legend .source { font: normal 14px/1 proxima-nova,sans-serif; margin: 0 0 5px; }
 .wax-legend .source a { color: #666; text-decoration: none; }
 .wax-legend .source a:hover { text-decoration: underline; }
+.wax-legend .colorbox { text-indent: -999em; display: inline-block; width: 16px; height: 16px; overflow: hidden; }
 
 .wax-tooltip {
     min-width: 200px;
@@ -95,6 +96,7 @@ header h1 { display: block; float: left; line-height: 50px; color: #fff; font-we
 .wax-tooltip .num { text-align: right; clear: both; padding: 0 5px; }
 .wax-tooltip td { border-top: 1px solid #ddd; padding: 0 2px; }
 .wax-tooltip h4 { font-size: 1.3em; font-weight: 700; padding: 0 0 5px; margin: 0; }
+
 
 a.wax-fullscreen { display: none; }
 a.zoomer { 
