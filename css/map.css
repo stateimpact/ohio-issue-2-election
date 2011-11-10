@@ -65,14 +65,14 @@ header h1 { display: block; float: left; line-height: 50px; color: #fff; font-we
     color: #333;
 }
 .no-rgba .wax-legend { background: #fff; border: 1px solid #ddd; }
-
-.wax-legends .wax-legend li { margin-bottom: 5px; }
+.wax-legends .wax-legend li { margin-bottom: 5px; position: relative; z-index: 500; }
 .wax-legends .wax-legend h3 { line-height: 1.1; font-size: 24px; }
 .wax-legend .explainer { font: normal 14px/1.2 proxima-nova,sans-serif; }
 .wax-legend .source { font: normal 14px/1 proxima-nova,sans-serif; margin: 0 0 5px; }
 .wax-legend .source a { color: #666; text-decoration: none; }
 .wax-legend .source a:hover { text-decoration: underline; }
-.wax-legend .colorbox { text-indent: -999em; display: inline-block; width: 16px; height: 16px; overflow: hidden; }
+.wax-legend span { display: block; position: static; float: left; width: 16px; height: 16px; overflow: visible; margin-right: 5px; }
+.wax-legend br { display: none; }
 
 .wax-tooltip {
     min-width: 200px;
